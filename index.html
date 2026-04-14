@@ -1,13 +1,3 @@
-<h1>Tippspiel</h1>
-<label>Name:</label>
-<input type="text"id=ToreA><br><br>
-
-<label>Tore TeamA</label>
-<input type="number"id=ToreA><br><br>
-
-<label>Tore TeamB</label>
-<input type="number"id=ToreB><br><br>
-<button>Tipp seichern</button>
 
 <!DOCTYPE html> 
 <html lang="de"> 
@@ -20,9 +10,9 @@
 <label>Name:</label> 
 <input type="text" id="name"><br><br> 
 <label>Tore Team A:</label> 
-<input type="number" id="toreA"><br><br> 
+<input type="number" id="ToreA"><br><br> 
 <label>Tore Team B:</label> 
-<input type="number" id="toreB"><br><br> 
+<input type="number" id="ToreB"><br><br> 
 <button onclick="speichern()">Tipp speichern</button> 
 <button onclick="laden()">Tipps laden</button> 
 <h2>Gespeicherte Tipps</h2> 
@@ -42,8 +32,8 @@ const supabase = createClient(supabaseUrl, supabaseKey);
         .insert([ 
           { 
             name: name, 
-            tore_a: toreA, 
-            tore_b: toreB 
+            Tore_A: toreA, 
+            Tore_B: toreB 
           } 
         ]); 
  
